@@ -1,0 +1,112 @@
+@font-face {
+  font-family: Montserrat-Bold;
+  src: url("./Montserrat-Bold.otf");
+}
+
+body {
+  font-family: Montserrat-Bold;
+}
+
+#mainBanner{
+  height: 90px;
+  line-height: 90px;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  color:#f0f0f0;
+  background-image: url("../img/mainBanner.jpg");
+  background-size: cover;
+}
+
+#subBanner { grid-area: mainTitle; }
+#infoPanel1 { grid-area: info1; }
+#infoPanel2 { grid-area: info2; }
+.maparea { grid-area: maparea; }
+#infoPanel3 { grid-area: info3; }
+#infoPanel4 { grid-area: info4; }
+.slide { grid-area: slide; }
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+      'mainTitle mainTitle mainTitle mainTitle mainTitle mainTitle'
+      'info1 info1 maparea maparea info3 info3'
+      'info2 info2 maparea maparea info4 info4'
+      'slide slide slide slide slide slide';
+    align-items: center;
+    justify-content: center;
+    grid-gap: 5px;
+    background-color:#800040;
+  }
+
+  .grid-container > div {
+    background-color: #f0f0f0;
+    font-size: 20px;
+  }
+
+  #subBanner {
+    height: 50px;
+    line-height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    color:#800040;
+    background-image: url("../img/subBanner.jpg");
+    background-size: cover;
+  }
+
+  .infoPanel{
+    width: 32vw;
+    height: 37vh;
+    min-height: 280px;
+    min-width: 404px;
+    background-image: url("../img/infoBG.jpg");
+    background-size: cover;
+  }
+
+  .maparea{
+    height: 74.5vh;
+    width: 33vw;
+    min-width: 445px;
+    min-height: 565px;
+  }
+
+  .bottomPanel{
+    width: 97.5vw;
+    height: 37vh;
+    min-height: 280px;
+    min-width: 1275px;
+    background-image: url("../img/infoBG.jpg");
+    background-size: cover;
+  }
+
+  .categoryTitle{
+    color:#800040;
+    font-size: 30px;
+    text-align: center;
+    font-weight: bold;
+    line-height: 50px;
+  }
+
+  ul {
+    list-style: none;
+    list-style-position: outside;
+    justify-content: space-around;
+  }
+
+
+  ul li::before {
+    content: "\2022";
+    color: #800040;
+    font-weight: bold;
+    width: 1em;
+  }
+
+  .bottomImg{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }

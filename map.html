@@ -1,0 +1,49 @@
+<!DOCTYPE html><html>
+<meta charset="utf-8" />
+    <head>
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+        <link rel="stylesheet" href="./css/location.css"/>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" defer></script>
+        <script src="./js/loadMarkers.js" defer></script>
+    </head>
+    <body>
+        <div id="mainBanner">MAPA INTERACTIVO</div>
+        <div id="content" class="grid-container">
+            <div  id="subBanner">PLANTEL</div>
+            <div class="infoPanel" id="infoPanel1">
+                <div class="categoryTitle">CONDICIONES ACTUALES</div>
+                <div class="listText">
+                    <ul id="CONDICIONES">
+                    </ul> 
+                </div>
+            </div>
+            <div class="infoPanel" id="infoPanel2">
+                <div class="categoryTitle">RIESGO</div>
+                <div class="listText">
+                    <ul id="RIESGO">
+                    </ul> 
+                </div>
+            </div>
+
+            <div class="maparea" id="interactiveMap" ></div>
+
+            <div class="infoPanel" id="infoPanel3">
+                <div class="categoryTitle">NOM</div>
+                <div class="listText">
+                    <ul id="NOM">
+                    </ul> 
+                </div>
+            </div>
+            <div class="infoPanel" id="infoPanel4">
+                <div class="categoryTitle">RECOMENDACIONES</div>
+                <div class="listText">
+                    <ul id="RECOMENDACIONES">
+                    </ul> 
+                </div>
+            </div>
+
+            <div class="bottomPanel slide"><img id="img1" class="bottomImg" src="../placeholders/FONDO.jpg" alt="Vista 1"></div>
+        </div>
+
+    </body> 
+</html>

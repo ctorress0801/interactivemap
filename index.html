@@ -1,0 +1,26 @@
+<!DOCTYPE html><html>
+<meta charset="utf-8" />
+<head></head>
+<body>
+    <div id="locationSelector">
+        <select id="zones" onchange="openMap()">
+            <option value="no" >---Zona---</option>
+            <option value="cecyt01">CECyT 1</option>
+            <option value="cecyt02" >CECyT 2</option>
+            <option value="cecyt03" >CECyT 3</option>
+            <option value="cecyt04">CECyT 4</option>
+            <option value="cecyt05">CECyT 5</option>
+        </select> 
+    </div>
+</body>
+</html>
+
+<script>
+    function openMap(){
+        var option = document.getElementById("zones").value;
+        console.log(option);
+        if(option != "no"){
+            window.location.href = "map.html?school="+option;
+        }
+    }
+</script>
